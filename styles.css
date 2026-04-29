@@ -303,6 +303,7 @@ li + li {
 .card,
 .stat-card,
 .offer-card,
+.skills-card,
 .service-card,
 .portfolio-card,
 .contact-card,
@@ -456,6 +457,24 @@ li + li {
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+}
+
+.skills-card {
+  padding: 30px;
+  border-color: rgba(59, 130, 246, 0.26);
+  background: linear-gradient(180deg, rgba(59, 130, 246, 0.11), rgba(255, 255, 255, 0.025));
+}
+
+.skills-card h3 {
+  margin: 0 0 20px;
+  color: var(--text);
+  font-size: 1.35rem;
+  line-height: 1.2;
+}
+
+.skills-card li {
+  color: var(--muted-strong);
+  font-weight: 650;
 }
 
 .mini-stat {
