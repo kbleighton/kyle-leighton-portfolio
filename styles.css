@@ -427,6 +427,26 @@ li + li {
   color: var(--text);
 }
 
+.about-sidebar {
+  display: grid;
+  gap: 20px;
+}
+
+.profile-card {
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.02));
+  box-shadow: var(--shadow);
+}
+
+.profile-photo {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
 .photo-frame {
   position: relative;
   overflow: hidden;
