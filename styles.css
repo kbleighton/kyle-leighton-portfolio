@@ -207,9 +207,16 @@ li + li {
 .page-hero h1 {
   margin: 18px 0 0;
   color: var(--text);
-  font-size: clamp(2.8rem, 8vw, 6.8rem);
   line-height: 0.98;
   letter-spacing: 0;
+}
+
+.hero h1 {
+  font-size: clamp(2.55rem, 6vw, 5.45rem);
+}
+
+.page-hero h1 {
+  font-size: clamp(2.8rem, 8vw, 6.8rem);
 }
 
 .hero p,
@@ -259,8 +266,7 @@ li + li {
   color: var(--accent);
 }
 
-.hero .button-primary,
-.resume-panel .button-primary {
+.hero .button-primary {
   margin-top: 36px;
 }
 
@@ -296,6 +302,7 @@ li + li {
 
 .card,
 .stat-card,
+.offer-card,
 .service-card,
 .portfolio-card,
 .contact-card,
@@ -491,6 +498,40 @@ li + li {
   color: var(--muted);
 }
 
+.offer-grid {
+  margin-bottom: 72px;
+}
+
+.offer-card {
+  min-height: 300px;
+  padding: 30px;
+  border-color: rgba(59, 130, 246, 0.26);
+  background: linear-gradient(180deg, rgba(59, 130, 246, 0.11), rgba(255, 255, 255, 0.025));
+}
+
+.offer-label {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: var(--text);
+  font-size: 0.88rem;
+  font-weight: 850;
+}
+
+.offer-card h2 {
+  margin: 24px 0 10px;
+  font-size: 1.48rem;
+  line-height: 1.2;
+}
+
+.supporting-heading {
+  margin-top: 0;
+}
+
 .service-card {
   min-height: 330px;
   padding: 30px;
@@ -504,14 +545,22 @@ li + li {
 }
 
 .service-card p,
+.offer-card p,
 .portfolio-card p,
 .resume-panel p {
   color: var(--muted-strong);
 }
 
-.services-cta {
+.cta-row {
   margin-top: 34px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
   text-align: center;
+}
+
+.cta-row .button {
+  max-width: 100%;
 }
 
 .portfolio-grid {
@@ -539,6 +588,33 @@ li + li {
 
 .portfolio-card li {
   color: var(--muted-strong);
+}
+
+.case-study-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 24px;
+}
+
+.case-detail h3 {
+  margin: 0 0 6px;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.case-detail p {
+  font-size: 0.98rem;
+}
+
+.case-detail:last-child {
+  grid-column: 1 / -1;
+}
+
+.case-link {
+  margin-top: 26px;
 }
 
 .portfolio-card.featured {
@@ -571,6 +647,14 @@ li + li {
   margin: 26px auto 0;
   max-width: 680px;
   font-size: 1.08rem;
+}
+
+.resume-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 36px;
 }
 
 .social-links {
@@ -619,6 +703,12 @@ li + li {
 
 .contact-card {
   padding: clamp(26px, 4vw, 38px);
+}
+
+.calendly-cta {
+  margin-bottom: 26px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid var(--line);
 }
 
 .form-grid {
@@ -895,13 +985,25 @@ textarea:focus {
   .grid-4,
   .grid-2,
   .logo-row,
+  .case-study-grid,
   .form-grid {
     grid-template-columns: 1fr;
   }
 
+  .case-detail:last-child {
+    grid-column: auto;
+  }
+
   .stat-card,
+  .offer-card,
   .service-card {
     min-height: auto;
+  }
+
+  .resume-actions,
+  .cta-row {
+    align-items: stretch;
+    flex-direction: column;
   }
 
   .photo-frame {

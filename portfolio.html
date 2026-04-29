@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Selected mobile automation and quality engineering work by Kyle Leighton.">
+    <meta name="description" content="Mobile automation case studies from Kyle Leighton, including device labs, regression cycle reduction, FDA verification, CI smoke testing, and high-scale iOS and Android automation.">
     <title>Portfolio | Kyle Leighton</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +32,8 @@
         <section class="page-hero">
           <div class="container reveal">
             <span class="eyebrow">Portfolio</span>
-            <h1>Work That Speaks for Itself</h1>
+            <h1>Proof From Real Engineering Environments</h1>
+            <p>Selected examples of mobile automation systems, CI/CD quality gates, API utility layers, and regulated release work.</p>
           </div>
         </section>
 
@@ -40,54 +41,145 @@
           <div class="container portfolio-grid">
             <article class="portfolio-card featured reveal">
               <h2>Chipotle Mexican Grill</h2>
-              <p class="context">Current Role - Consumer Mobile Application</p>
-              <ul>
-                <li>Built iOS and Android automation frameworks for a consumer app used by millions.</li>
-                <li>Designed and built a complete API utility layer from scratch.</li>
-                <li>Configured Azure DevOps YAML pipelines for PR-level smoke testing.</li>
-                <li>Leveraged Claude Code to compress a month-long build into one week.</li>
-              </ul>
+              <p class="context">High-scale consumer mobile application</p>
+              <div class="case-study-grid">
+                <section class="case-detail">
+                  <h3>Engineering Context</h3>
+                  <p>iOS and Android automation for a consumer app used by millions of people.</p>
+                </section>
+                <section class="case-detail">
+                  <h3>Problem</h3>
+                  <p>The team needed stronger release confidence from mobile automation, API-driven setup and validation, and PR-level CI feedback.</p>
+                </section>
+                <section class="case-detail">
+                  <h3>Solution</h3>
+                  <p>Built iOS and Android automation frameworks, designed a complete API utility layer from scratch, and configured Azure DevOps YAML pipelines for PR-level smoke testing.</p>
+                </section>
+                <section class="case-detail">
+                  <h3>Result</h3>
+                  <p>Created faster feedback loops for mobile changes and stronger confidence before merges reached release branches.</p>
+                </section>
+                <section class="case-detail">
+                  <h3>Tech Stack</h3>
+                  <p>iOS, Android, API testing, Azure DevOps, YAML pipelines, mobile automation frameworks.</p>
+                </section>
+              </div>
             </article>
             <article class="portfolio-card reveal">
               <h2>Embecta</h2>
-              <p class="context">FDA Class III Medical Device Software</p>
-              <ul>
-                <li>Built a 29-device Appium/C# automation lab.</li>
-                <li>Reduced regression cycles by 60% through parallel CI/CD execution.</li>
-                <li>Led 510(k) verification testing for FDA submission.</li>
-                <li>Managed a distributed team of four offshore automation engineers.</li>
-              </ul>
+              <p class="context">FDA Class III medical device software</p>
+              <div class="case-study-grid">
+                <section class="case-detail">
+                  <h3>Engineering Context</h3>
+                  <p>Regulated mobile and device software requiring high-confidence verification and repeatable regression coverage.</p>
+                </section>
+                <section class="case-detail">
+                  <h3>Problem</h3>
+                  <p>Regression execution across devices was too slow for the release demands of a regulated medical device environment.</p>
+                </section>
+                <section class="case-detail">
+                  <h3>Solution</h3>
+                  <p>Built a 29-device Appium/C# automation lab, implemented parallel CI/CD execution, led 510(k) verification testing for FDA submission, and managed four offshore automation engineers.</p>
+                </section>
+                <section class="case-detail">
+                  <h3>Result</h3>
+                  <p>Reduced regression cycles by 60% while supporting formal FDA submission work.</p>
+                </section>
+                <section class="case-detail">
+                  <h3>Tech Stack</h3>
+                  <p>Appium, C#, CI/CD, physical device lab, FDA 510(k) verification.</p>
+                </section>
+              </div>
             </article>
             <article class="portfolio-card reveal">
               <h2>Boston Scientific</h2>
-              <p class="context">Regulated Mobile, Web, and Embedded Testing</p>
-              <ul>
-                <li>Delivered end-to-end system testing across Android, iOS, web, and embedded hardware.</li>
-                <li>Built Playwright and Appium automation coverage across mobile and web layers.</li>
-                <li>Executed Human Factors validation and UX testing for regulatory compliance.</li>
-              </ul>
+              <p class="context">Regulated mobile, web, and embedded testing</p>
+              <div class="case-study-grid">
+                <section class="case-detail">
+                  <h3>Engineering Context</h3>
+                  <p>Cross-platform regulated software spanning Android, iOS, web, and embedded hardware.</p>
+                </section>
+                <section class="case-detail">
+                  <h3>Problem</h3>
+                  <p>The product needed end-to-end validation across multiple surfaces while still meeting regulatory and human factors expectations.</p>
+                </section>
+                <section class="case-detail">
+                  <h3>Solution</h3>
+                  <p>Delivered system testing across mobile, web, and embedded layers, with Playwright and Appium automation coverage plus Human Factors validation and UX testing.</p>
+                </section>
+                <section class="case-detail">
+                  <h3>Result</h3>
+                  <p>Strengthened cross-platform release readiness for regulated software with automation coverage across key product layers.</p>
+                </section>
+                <section class="case-detail">
+                  <h3>Tech Stack</h3>
+                  <p>Appium, Playwright, Android, iOS, web applications, embedded hardware.</p>
+                </section>
+              </div>
             </article>
             <article class="portfolio-card reveal">
               <h2>Medtronic</h2>
-              <p class="context">Medical Device Mobile Automation</p>
-              <ul>
-                <li>Architected scalable Appium/Java frameworks across 30+ device configurations.</li>
-                <li>Converted a 30-day manual regression suite to a 4-hour automated run.</li>
-                <li>Mentored junior engineers in automation best practices.</li>
-              </ul>
+              <p class="context">Medical device mobile automation</p>
+              <div class="case-study-grid">
+                <section class="case-detail">
+                  <h3>Engineering Context</h3>
+                  <p>Medical device mobile automation across 30+ device configurations.</p>
+                </section>
+                <section class="case-detail">
+                  <h3>Problem</h3>
+                  <p>A 30-day manual regression suite created a major bottleneck for release validation.</p>
+                </section>
+                <section class="case-detail">
+                  <h3>Solution</h3>
+                  <p>Architected scalable Appium/Java frameworks across the device matrix and mentored junior engineers in automation best practices.</p>
+                </section>
+                <section class="case-detail">
+                  <h3>Result</h3>
+                  <p>Reduced a 30-day manual regression process to a 4-hour automated run.</p>
+                </section>
+                <section class="case-detail">
+                  <h3>Tech Stack</h3>
+                  <p>Appium, Java, mobile device matrix, automated regression infrastructure.</p>
+                </section>
+              </div>
             </article>
-            <a class="portfolio-card reveal" href="https://github.com/kbleighton" target="_blank" rel="noreferrer">
+            <article class="portfolio-card reveal">
               <h2>Fold QA Take-Home</h2>
-              <p class="context">Public GitHub Project</p>
-              <p>Cross-platform iOS and Android E2E test suite built with Maestro, integrated into GitHub Actions CI/CD. Public repository demonstrating mobile automation architecture.</p>
-            </a>
+              <p class="context">Public GitHub project</p>
+              <div class="case-study-grid">
+                <section class="case-detail">
+                  <h3>Engineering Context</h3>
+                  <p>Public sample project demonstrating cross-platform mobile E2E automation architecture.</p>
+                </section>
+                <section class="case-detail">
+                  <h3>Problem</h3>
+                  <p>A take-home project needed a clear, repeatable way to show mobile automation structure and CI execution.</p>
+                </section>
+                <section class="case-detail">
+                  <h3>Solution</h3>
+                  <p>Built a cross-platform iOS and Android E2E test suite with Maestro and integrated it into GitHub Actions CI/CD.</p>
+                </section>
+                <section class="case-detail">
+                  <h3>Result</h3>
+                  <p>Created a public repository demonstrating mobile automation architecture and CI-ready test execution.</p>
+                </section>
+                <section class="case-detail">
+                  <h3>Tech Stack</h3>
+                  <p>Maestro, GitHub Actions, iOS, Android, E2E mobile testing.</p>
+                </section>
+              </div>
+              <a class="button button-secondary case-link" href="https://github.com/kbleighton" target="_blank" rel="noreferrer">View GitHub</a>
+            </article>
+            <div class="cta-row reveal">
+              <a class="button button-primary" href="contact.html">Discuss Your Automation Challenge</a>
+            </div>
           </div>
         </section>
       </main>
 
       <footer class="site-footer">
         <div class="footer-inner container">
-          <p>Copyright Kyle Leighton 2025.</p>
+          <p>Copyright Kyle Leighton 2026.</p>
           <div class="footer-links">
             <a href="https://linkedin.com/in/kyle-leighton-098b62132" target="_blank" rel="noreferrer" aria-label="LinkedIn">
               <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">

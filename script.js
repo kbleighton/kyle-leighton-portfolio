@@ -59,9 +59,9 @@ if (contactForm) {
     const email = formData.get("email") || "";
     const company = formData.get("company") || "";
     const message = formData.get("message") || "";
-    const subject = encodeURIComponent(`Portfolio inquiry from ${name}`);
+    const subject = encodeURIComponent(`Mobile automation inquiry from ${name}`);
     const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\nCompany: ${company}\n\n${message}`
+      `Name: ${name}\nEmail: ${email}\nCompany: ${company}\n\nApp, stack, and current testing challenge:\n${message}`
     );
     const status = contactForm.querySelector(".form-status");
 
